@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(/image/z3234075312432_5f84e5719d04e5c79e9f2f4b934eff29.jpg) repeat-y;
+}
+.box1{
+    text-align: center;
+}
+
+.tittle{
+    margin: 30px 0px 30px 0px;
+    display: inline-block;
+    background-color: green;
+    color: beige;
+}
+
+.box{
+    width: 100%;
+}
+
+.box2{
+    width: 1200px;
+    margin: 0px auto;
+}
+p{
+    margin-bottom: 10px;
+    color: blue;
+    font-weight: 500;
+}
+
