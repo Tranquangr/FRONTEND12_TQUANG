@@ -1,0 +1,25 @@
+.box{
+    width:100%;
+    height:200px;
+    background-color:green;
+}
+
+.box_child{
+    width:100px;
+    display: inline-block;;
+
+    background-color: black;
+    margin-left:10px;
+}
+
+.box_child1{
+    height:100px;
+    /* lưu ý sử dụng verical-aligh cho các kí tự lên xuống */
+    vertical-align:top;
+}
+
+.box_child2{
+    height:200px;
+}
+
+

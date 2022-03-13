@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F1FD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box_login{
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+
+
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.6);
+
+    padding: 30px;
+
+    font-size: 0px;
+}
+
+/* Area_ADS */
+
+.area_ads{
+    width: 43%;
+    height: 100%;
+
+    background: rgb(130,135,184);
+    background: linear-gradient(135deg, rgba(130,135,184,1) 0%, rgba(120,70,147,1) 76%);
+
+    border-radius: 5px 0 0 5px;
+
+    display: inline-block;
+    font-size: 17px;
+}
+
+.area_ads .list_ads{
+    list-style: none;
+    width: 70%;
+    padding: 70px 0 0 70px;
+}
+
+.area_ads .list_ads li{
+    margin-bottom: 40px;
+}
+
+.area_ads .list_ads .rounded_check{
+    background-color: rgb(189, 188, 188);
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    line-height: 30px;
+    text-align: center;
+
+
+
+}
+
+.area_ads .list_ads .icon_check{
+    color: #fff; ;
+    font-size: 20px;
+
+    display: inline-block;
+}
+
+.area_ads .list_ads .title_ads, .review_detail{
+    color: #fff;
+}
+
+.area_ads .list_ads .title_ads{
+    font-weight:normal;
+    font-size:20px;
+    margin: 10px 0px;
+}
+
+/* Area_INPUT_DATA */
+
+
+
+.area_input_data{
+    display: inline-block;
+    font-size:17px;
+    width:57%;
+    vertical-align:top;
+    padding: 50px;
+}
+
+.area_input_data form, .tittle_login{
+    width:100%;
+}
+
+
+.tittle_login{
+    margin-bottom:40px;
+}
+.signup-label{
+    font-size:16px;
+    color : #373941;
+    display: inline-block;
+    margin-bottom:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.signup-input{
+    display: block;
+    width: 100%;
+    padding:20px;
+    border-radius:10px;
+    background-color: #f2f3f5;
+    outline:none;
+    border:0;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.signup-submit{
+    padding:20px;
+    color:white;
+    font-size: 18px;
+    border:0;
+    outline:none;
+    display:block;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(164, 88, 187);
+    margin-top:30px;
+    cursor: pointer;
+}
+
+.accept_creat{
+    font-size:18px;
+    opacity: 0.7;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    border:0;
+    outline: none;
+}
+
