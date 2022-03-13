@@ -6,7 +6,7 @@
 
 body{
     background-color: #F7F1FD;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 #box_login{
@@ -45,7 +45,7 @@ body{
 
 .area_ads .list_ads{
     list-style: none;
-    width: 70%;
+    width: 75%;
     padding: 70px 0 0 70px;
 }
 
@@ -81,7 +81,7 @@ body{
 
 .area_ads .list_ads .title_ads{
     font-weight:normal;
-    font-size:20px;
+    font-size:21px;
     margin: 10px 0px;
 }
 
@@ -126,6 +126,11 @@ body{
     font-size:18px;
 }
 
+.signup-input:focus{
+    border: 2px solid rgb(172, 142, 160);
+}
+
+
 .signup-submit{
     padding:20px;
     color:white;
@@ -138,6 +143,11 @@ body{
     background-color: rgb(164, 88, 187);
     margin-top:30px;
     cursor: pointer;
+}
+
+.signup-submit:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 1px 1px rgba(228, 144, 210, 0.466);
 }
 
 .accept_creat{
