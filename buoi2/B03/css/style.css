@@ -133,6 +133,10 @@ input:focus{
 
 .more_language a {
     color: blue;
+    text-decoration: none;
+}
+.more_language a:hover {
+    text-decoration: underline;
 }
 
 /* FOOTER */
