@@ -52,7 +52,7 @@
             <h2 class="tittle_login">
                 Creat your account
             </h2>
-            <form>
+            <form method="POST">
                 <label for="email" class="signup-label">Email</label>
                 <input type="email" id="email" class="signup-input" placeholder="Enter your email address" required>
                 <label for="fullname" class="signup-label">Full name</label>
@@ -61,7 +61,8 @@
                 <input type="password" id="password" class="signup-input" placeholder="Type to create password" required>
                 <input type="checkbox" id="html" name="fav_language" value="HTML"required>
                 <label for="html" class="accept_creat">Get updates and notifications about your product.</label><br>
-                <button class="signup-submit">Type to create password</button>
+                <!-- <button class="signup-submit">Type to create password</button> -->
+                <input type="submit" value="Type to create password" class="signup-submit">
             </form>
 
         </div>
