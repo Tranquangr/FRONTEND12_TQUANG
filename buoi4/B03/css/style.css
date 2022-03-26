@@ -22,20 +22,20 @@
     overflow: hidden;
 }
 
-
+/* XU LY HOVER 1 */
 .box a:nth-child(1):hover{
     font-weight: bold;
     color: #fff;
     background-color: rgb(139, 99, 202)
 }
 
+
+/* XU LY HOVER 2 */
 .box a:nth-child(2){
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, #fff 50%,rgb(139, 99, 202) 50%);
     transition: all 0.5s;
 }
-
-
 
 .box a:nth-child(2):hover{
     background-position: 0 100%;
@@ -44,14 +44,10 @@
 }
 
 
-
+/* XU LY HOVER 3 */
 .box a:nth-child(3){
    position: relative;
 }
-.box a:nth-child(3):hover{
-    position: relative;
- }
-
 
 .box a:nth-child(3)::after{
    content: "";
@@ -67,8 +63,6 @@
 .box a:nth-child(3):hover:after{
     left: -80%;
  }
-
-
 
  .box a:nth-child(3)::before{
     content: "";
