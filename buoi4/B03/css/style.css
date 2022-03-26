@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    background:
+    
+}
+
+.button{
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    width: 120px;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+.box a:nth-child(1):hover{
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(139, 99, 202)
+}
+
+.box a:nth-child(2){
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #fff 50%,rgb(139, 99, 202) 50%);
+    transition: all 0.5s;
+}
+
+
+
+.box a:nth-child(2):hover{
+    background-position: 0 100%;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+.box a:nth-child(3){
+   position: relative;
+}
+.box a:nth-child(3):hover{
+    position: relative;
+ }
+
+
+.box a:nth-child(3)::after{
+   content: "";
+   background-color: rgb(200, 255, 0);
+   width: 80px;
+   height: 50px;
+   position: absolute;
+   left: 110%;
+   transition: all 0.5s ease;
+   transform: skewX(30deg);
+   
+}
+.box a:nth-child(3):hover:after{
+    left: -80%;
+ }
+
+
+
+ .box a:nth-child(3)::before{
+    content: "";
+    background-color: rgb(76, 0, 255);
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    right: 110%;
+    transition: all 0.5s ease;
+    transform: skewX(30deg);
+    
+ }
+ .box a:nth-child(3):hover:before{
+     right: -80%;
+  }
+ 
+
