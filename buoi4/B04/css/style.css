@@ -486,3 +486,83 @@ body{
 .effect_Romeo .area_img:hover:before{
     transform: rotate(-45deg);
 }
+
+/* effect_Terry */
+.effect_Terry .area_img::before{
+    content:"";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 200%;
+    height: 150%;
+    border: 20px solid black;
+    transition: all 0.2s ease-in;
+
+}
+.effect_Terry .area_img::after{
+    content:"";
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 200%;
+    height: 150%;
+    border: 60px solid black;
+    transition: all 0.2s ease-in;
+
+}
+.effect_Terry .area_img:hover:before{
+    top: 0px;
+    left: 0px;
+
+}
+.effect_Terry .area_img:hover:after{
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.effect_Terry .area_img h2{
+    position: absolute;
+    color: #fff;
+    font-size:2em;
+    font-weight: 200;
+    z-index: 10;
+    bottom: 2%;
+    right: 10%;
+    width: 200px;
+    transition: all 0.2s ease-in;
+}
+.effect_Terry .area_img span{
+    font-weight: 600;
+}
+
+.effect_Terry .area_img:hover h2{
+    right: 60%;
+}
+
+.effect_Terry .area_img .icons a{
+    position: absolute;
+    z-index: 10;
+    font-size:2em;
+    color: #fff;
+}
+
+.effect_Terry .area_img .icons a:nth-child(1){
+    top: 5%;
+    right:-10%;
+    transition: all 0.2s ease;
+}
+
+.effect_Terry .area_img .icons a:nth-child(2){
+    top: 20%;
+    right:-10%;
+    transition: all 0.3s ease;
+}
+.effect_Terry .area_img .icons a:nth-child(3){
+    top: 35%;
+    right:-10%;
+    transition: all 0.4s ease;
+}
+.effect_Terry .area_img:hover .icons a{
+    right: 2%;
+}
