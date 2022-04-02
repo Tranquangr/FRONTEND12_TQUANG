@@ -15,8 +15,7 @@ body {
 .container{
     width: 80%;
     max-width: 1200px;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 /*SLIDE*/
