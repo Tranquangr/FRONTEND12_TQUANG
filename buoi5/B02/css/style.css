@@ -64,11 +64,11 @@ header {
 
 }
 
-.text_content_sub{
+ .text_content_sub{
     font-size: 72px;
     font-family: 'Kaushan Script', cursive;
 }
-.text_content{
+ .text_content{
     font-size: 150px;
     font-weight: bold;
 }
@@ -77,7 +77,7 @@ header {
     height :3px;
     background-color: #fff;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .hero_slider .hero .more{
@@ -85,7 +85,7 @@ header {
     height: 40px;
     line-height:40px;
     display: inline-block;
-    margin-top:42px;
+    margin-top:40px;
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
@@ -95,11 +95,12 @@ header {
     transform: scale(1.1);
     color: rgb(252, 227, 138);
     transition: 0.4s;
+    border: 1px solid rgb(252, 227, 138);
 }
 
 
 .hero_slider .sliders{
-    margin-top: 113px;
+    margin-top: 173px;
     list-style: none;
     display: flex;
 }
@@ -155,6 +156,9 @@ header {
 
 /* MAIN */
 
+
+/* SECTION ABOUT */
+
 .section_about{
     text-align: center;
     margin-top:85px;
@@ -170,10 +174,10 @@ header {
 }
 .section_about .line{
     background-color:rgb(243,129,129);
-    margin-top:35px;
+    margin-top:30px;
 }
 
-.section_about .container p {
+.description {
     margin-top: 40px;
     margin-bottom:65px;
     font-size: 15px;
@@ -185,9 +189,445 @@ header {
 .section_about .img{
     display: flex;
     justify-content:space-between;
+
 }
 
 .section_about .img_item{
-    width: 33.33%;
-    ssss
+    width: 388px;
+    height: 260px;
+}
+
+.section_about .img_1{
+    background: linear-gradient(45deg, rgba(238,215,137,0.8) 0%, rgba(231,133,130,0.8) 50%),
+    url('../mogo_image/about1.png') top center / cover no-repeat;
+    position: relative;
+}
+
+.section_about .img p, .section_about .img i{
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.section_about .super_team{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section_about .img_2{
+    background:
+    url('../mogo_image/about2.png') top center / cover no-repeat;
+}
+.section_about .img_3{
+    background: 
+    url('../mogo_image/about3.png') top center / cover no-repeat;
+}
+.section_about .img_item{
+    transition: 0.4s;
+}
+.section_about .img_item:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px rgb(149,255,211) ;
+}
+
+/* SECTION FIGURES */
+
+.section_introduce_figures{
+    background: rgb(149,255,211);
+}
+
+.section_introduce_figures .figures{
+    display: flex;
+    margin-top: 110px;
+}
+
+.section_introduce_figures .figures .figure_item{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 20%;
+    text-align: center;
+}
+
+.section_introduce_figures .figures .figure_item h2{
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.section_introduce_figures .figures .figure_item span{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* SECTION SERVICES */
+
+.section_introduce_services{
+    text-align: center;
+    margin-top: 85px;
+}
+
+.section_introduce_services .text_content_sub{
+    font-size:24px;
+}
+
+.section_introduce_services .text_content{
+    font-size:30px;
+    margin-top: 20px;
+}
+
+.section_introduce_services .line{
+    background-color:rgb(243,129,129);
+    margin-top:35px;
+}
+
+.section_introduce_services .services{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.section_introduce_services .services .service_item{
+    width: calc(100%/3);
+    display: flex;
+    padding: 50px 0px;
+}
+.section_introduce_services .services .service_item:nth-child(1),.service_item:nth-child(2),.service_item:nth-child(3){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.section_introduce_services .services .service_item .logo_service{
+    width: 20%;
+    margin-top: 5px;
+}
+
+.section_introduce_services .services .service_item .service_skill{
+    width: 70%;
+    text-align: left;
+
+}
+
+.section_introduce_services .services .service_item .service_skill .skill{
+    font-size:14px;
+    margin-bottom: 10px;
+}
+
+.section_introduce_services .services .service_item .service_skill .skill_description{
+    font-size:15px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+/* SECTION DESIGN DEVICES */
+
+.section_design_on_divices {
+    text-align: center;
+    background:linear-gradient(45deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 50%), url('../mogo_image/Unique_devices.png') top center / cover no-repeat;
+}
+
+.section_design_on_divices .text_content_sub{
+    font-size:24px;
+    padding-top: 110px;
+}
+
+.section_design_on_divices .text_content{
+    font-size:30px;
+}
+.section_design_on_divices .line{
+    background-color:rgb(243,129,129);
+    margin-top:35px;
+}
+
+.section_design_on_divices .devices{
+    line-height: 0px;
+}
+.section_design_on_divices .devices .tablet{
+    position: relative;
+    display: inline-block;
+
+}
+
+.section_design_on_divices .devices .mobile{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%,20%);
+}
+
+/* SECTION INTRODUCE SERVICES Do */
+
+.section_introduce_services_do {
+    margin-top:85px;
+    margin-bottom: 115px;
+    text-align: center;
+}
+
+.section_introduce_services_do .text_content_sub{
+    font-size:24px;
+}
+
+.section_introduce_services_do .text_content{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.section_introduce_services_do .Service_content{
+    display: flex;
+    justify-content:space-between;
+}
+
+.section_introduce_services_do .img_whatwedo, .section_introduce_services_do .Introduce_services{
+    width:49%;
+}
+
+.section_introduce_services_do .skill_detail_item{
+    margin-bottom: 15px;
+    
+}
+
+.section_introduce_services_do .Skill_detail{
+    display: flex;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+    border: 1px solid rgba(119, 115, 115, 0.363);
+    
+}
+.section_introduce_services_do .Skill_detail .img_skill_detail{
+    width: 10%;
+    line-height:0px;
+}
+.section_introduce_services_do .Skill_detail .area_show_skill{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+
+.section_introduce_services_do .Skill_detail .area_show_skill~p{
+    font-size: 14px;
+}
+.section_introduce_services_do .Skill_detail .area_show_skill i{
+    margin-right: 20px;
+    font-size:18px;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.section_introduce_services_do .Introduce_services .skill_text_decsription{
+    text-align:left;
+    padding: 15px 40px 15px 15px;
+    border-left: 1px solid rgba(119, 115, 115, 0.363);
+    border-right: 1px solid rgba(119, 115, 115, 0.363);
+    border-bottom: 1px solid rgba(119, 115, 115, 0.363);
+    font-size: 15px;
+    opacity: 0.6;
+    font-style:italic;
+    line-height:20px;
+    max-height: 100px;
+    overflow-y: scroll;
+    display:none;
+}
+
+.section_introduce_services_do .Introduce_services .skill_detail_item:hover .skill_text_decsription{
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.section_introduce_services_do .Introduce_services .skill_detail_item:hover{
+    cursor: pointer;
+}
+.section_introduce_services_do .Introduce_services .skill_detail_item:hover .Skill_detail .area_show_skill i{
+    transform: rotate(180deg);
+}
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 0.6; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 0.6; }
+}
+
+/* SECTION COMMENT */
+.section_slide_comment {
+    background-color: rgb(248,248,248);
+}
+
+.slide_comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slide_comment .arrow_slide{
+    width: 5%;
+    text-align: center;
+}
+
+.slide_comment .arrow_slide i{
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.slide_comment .arrow_slide .arrow_left_slide{
+    transform: rotate(90deg);
+}
+.slide_comment .arrow_slide .arrow_right_slide{
+    transform: rotate(-90deg);
+}
+
+.slide_comment .img_comment{
+    width: 130px;
+    border:3px solid rgb(149,255,211);
+    text-align: center;
+    line-height:0;
+    margin : 70px 50px;
+}
+
+.slide_comment .img_comment img{
+    display: inline-block;
+    margin :30px 0px;
+}
+
+.slide_comment .comment{
+    width: 60%;
+}
+
+.slide_comment .comment p{
+    opacity: 0.6;
+}
+
+.slide_comment .comment .user{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slide_comment .comment .user .line{
+    background-color: rgb(243,129,129);
+    margin: 0;
+}
+
+.slide_comment .comment .user span{
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/* SECTION TEAM */
+.section_team{
+    text-align: center;
+    margin-top:85px;
+}
+
+.section_team .text_content_sub{
+    font-size:24px;
+}
+
+.section_team .text_content{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.section_team .line{
+    background-color:rgb(243,129,129);
+    margin-top:30px;
+}
+
+.description {
+    margin-top: 40px;
+    margin-bottom:65px;
+    font-size: 15px;
+    font-family: roboto, arial, helvetica;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.section_team .img{
+    display: flex;
+    justify-content:space-between;
+    line-height:0;
+}
+
+.section_team .img .img_item{
+    width: 32%;
+}
+.section_team .img .img_item .area_img{
+    position: relative;
+}
+.section_team .area_img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(45deg, rgba(238,215,137,0.8) 0%, rgba(231,133,130,0.8) 30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.section_team .infor_social_member{
+    list-style: none;
+    display: flex;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:11;
+    border: 1px solid rgb(197, 97, 39);
+}
+.section_team .infor_social_member li{
+    width: 60px;
+    padding:20px;
+    border-right: 1px solid rgb(197, 97, 39);
+    background-color: rgb(252, 227, 138);
+    transition: 0.4s;
+}
+.section_team .infor_social_member li:nth-last-child(1){
+    border: none;
+}
+.section_team .infor_social_member li a{
+    color: rgb(243, 129, 129);
+    font-size: 20px;
+    transition: 0.4s;
+    
+}
+
+
+.section_team .infor_social_member li:hover a{
+    color: white;
+}
+.section_team .infor_social_member li:hover{
+    background-color: rgb(243, 129, 129);
+}
+
+.section_team img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px rgb(149,255,211) ;
+}
+
+.section_team .area_img:hover{
+    box-shadow: 10px 10px rgb(149,255,211) ;
+}
+.section_team .img .name_job{
+    line-height:30px;
+    margin-top: 25px;
+}
+
+.section_team .img .name_job .name{
+    font-weight:300;
+}
+
+.section_team .img .name_job .job{
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/* SECTION_LOGO */
+.section_logo{
+    padding:64px 0px;
+    background-color: rgb(248,248,248);
+    margin-top: 110px;
 }
