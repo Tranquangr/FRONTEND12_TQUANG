@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    left: 0;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 30px auto;
+}
+input {
+    margin: 30px ;
+    padding: 5px;
+}
+button{
+    padding: 5px 20px;
+    margin: 30px 0;
+}
+
+#area-result{
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}

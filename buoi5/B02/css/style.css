@@ -548,10 +548,12 @@ header {
     display: flex;
     justify-content:space-between;
     line-height:0;
+    margin-left: -30px;
 }
 
 .section_team .img .img_item{
-    width: 32%;
+    width: 33.33%;
+    margin-left:30px;
 }
 .section_team .img .img_item .area_img{
     position: relative;

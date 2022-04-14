@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    left: 0;
+}
+
+#container{
+    display: flex;
+    justify-content:space-between;
+
+}
+.box{
+    width: 18%;
+    background-color:green;
+    color: #fff;
+    text-align:center;
+    height: 100%;
+}

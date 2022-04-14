@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    left: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 10px auto;
+}
+
+span{
+    text-transform: lowercase;
+    background-color: green;
+    color: #fff;
+}
