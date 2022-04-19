@@ -7,401 +7,804 @@
     <title>Document</title>
      <link rel="stylesheet" href="./css/style.css">
      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo_nav_social">
-                <div class="logo">
-                    <h2>MoGo</h2>
-                </div>
-                <ul class="list_nav_social">
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">WORK</a></li>
-                    <li><a href="">BLOCK</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                </ul>
-            </div>
-            <div class="hero_slider">
-                <div class="hero">
-                    <h2 class="text_content_sub">
-                        Creative Template
-                    </h2>
-                    <p class="text_content">
-                        WELCOME TO MOGO
-                    </p>
-                    <div class="line"></div>
-                    <a href="" class="more">LEARN MORE</a>
-                </div>
-                <ul class="sliders">
-                    <li><a href=""><span>01</span> INTRO</a></li>
-                    <li><a href=""><span>02</span> WORK</a></li>
-                    <li><a href=""><span>03</span> ABOUT</a></li>
-                    <li><a href=""><span>04</span> CONTACTS</a></li>
-                </ul>
-            </div>
-        </div>
+    <header id="Home">       
+           <!--Phần LOGO và NAVBAR-->
+           <div id="mogo_navbar">
+                    <div class="container navbar">
+                        <div class="logo">
+                            <h2>MoGo</h2>
+                        </div>
+                        <ul class="menu_item">
+                            <li><a href="#Home">ABOUT</a></li>
+                            <li><a href="#service">SERVICE</a></li>
+                            <li><a href="#work">WORK</a></li>
+                            <li><a href="#blog">BLOG</a></li>
+                            <li><a href="#footer">CONTACT</a></li>
+                            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        </ul>
+                    </div>                
+           </div>
+           <!--Phần Slider-->
+           <section id ="mogo_slider">
+                    <div class="container slide">
+                        <div class="slider_wrapper">
+                            <div class="carousel_inner">
+                                <div class="item item_header">
+                                    <h2 class="section_heading heading">
+                                        <span class="sub_heading">Creative Template</span>
+                                        welcome
+                                        <br>
+                                        to Mogo
+                                    </h2>
+                                    <div class="line"></div>
+                                    <a href="#" class="mogo_btn">Learn more</a>
+                                </div>
+                                <div class="item item_header">
+                                    <h2 class="section_heading heading">
+                                        <span class="sub_heading">Creative Template</span>
+                                        welcome
+                                        <br>
+                                        to Mogo
+                                    </h2>
+                                    <div class="line"></div>
+                                    <a href="#" class="mogo_btn">Learn more</a>
+                                </div>
+                                <div class="item item_header">
+                                    <h2 class="section_heading heading">
+                                        <span class="sub_heading">Creative Template</span>
+                                        welcome
+                                        <br>
+                                        to Mogo
+                                    </h2>
+                                    <div class="line"></div>
+                                    <a href="#" class="mogo_btn">Learn more</a>
+                                </div>
+                                <div class="item item_header">
+                                    <h2 class="section_heading heading">
+                                        <span class="sub_heading">Creative Template</span>
+                                        welcome
+                                        <br>
+                                        to Mogo
+                                    </h2>
+                                    <div class="line"></div>
+                                    <a href="#" class="mogo_btn">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="carousel_indicators">
+                            <li class="carousel_indicator_item" data-index ="0"><span>01</span> INTRO
+                                <div class="lineUp"></div>
+                            </li>
+                            <li class="carousel_indicator_item" data-index ="1"><span>02</span> WORK
+                                <div class="lineUp"></div>
+                            </li>
+                            <li class="carousel_indicator_item" data-index ="2"><span>03</span> ABOUT
+                                <div class="lineUp"></div>
+                            </li>
+                            <li class="carousel_indicator_item" data-index ="3"><span>04</span> CONTACTS
+                                <div class="lineUp"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+           </section>       
     </header>
 
     <main>
-        <div class="section_about">
-            <div class="container">
-                <h2 class="text_content_sub">
-                    What we do
-                </h2>
-                <h2 class="text_content">
+
+        <section id = "about">
+            <!-- STORY -->
+            <div class="container story">
+                <h2 class="heading">
+                    <span class="sub_heading">What we do</span>
                     STORY ABOUT US
                 </h2>
                 <div class="line"></div>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Qui provident accusantium doloribus totam dolor sunt neque, quibusdam modi sapiente eos blanditiis. 
-                     Ipsum nostrum, doloribus sequi laborum illo obcaecati labore error.
-                </p>
-                <div class="img">
-                    <div class="img_1 img_item">
-                        <div class="super_team">
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Voluptatum eos omnis earum quia consequuntur inventore? Et quod,
+                      error id facere maiores asperiores culpa,
+                       ipsam aliquid magni temporibus doloremque adipisci sapiente.</p>
+                <div class="content">
+                    <div class="content_item">
+                        <img src="./mogo_image/about2.png" width="100%" alt="#">
+                        <div class="hover_effect">
                             <i class="fa-solid fa-user-group"></i>
                             <p>SUPER TEAM</p>
                         </div>
                     </div>
-                    <div class="img_2 img_item">
+                    <div class="content_item">
+                        <img src="./mogo_image/about1.png" width="100%" alt="#">
+                        <div class="hover_effect">
+                            <i class="fa-solid fa-user-group"></i>
+                            <p>CREATIVITY</p>
+                        </div>
                     </div>
-                    <div class="img_3 img_item">
+                    <div class="content_item">
+                        <img src="./mogo_image/about3.png" width="100%" alt="#">
+                        <div class="hover_effect">
+                            <i class="fa-solid fa-user-group"></i>
+                            <p>DIGITAL</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="section_introduce_figures">
-           <div class="container">
-               <div class="figures">
-                <div class="figure_item">
-                    <h2>42</h2>
-                    <span>WEB DESIGN PROJECT</span>
+            <!-- COUTING -->
+           <div class="couting_wrapper">
+                <div class="container couting">
+                    <div class="couting_item">
+                        <div class="number">42</div>
+                        <div class="text">WEB DESIGN PROJECT</div>
+                    </div>
+                    <div class="couting_item">
+                        <div class="number">123</div>
+                        <div class="text">HAPPY CLIENT</div>
+                    </div>
+                    <div class="couting_item">
+                        <div class="number">15</div>
+                        <div class="text">AWARD WINNER</div>
+                    </div>
+                    <div class="couting_item">
+                        <div class="number">99</div>
+                        <div class="text">CUP OF COFFE</div>
+                    </div>
+                    <div class="couting_item">
+                        <div class="number">24</div>
+                        <div class="text">MEMBERS</div>
+                    </div>
                 </div>
-                <div class="figure_item">
-                    <h2>123</h2>
-                    <span>HAPPY CLIENT</span>
-                </div>
-                <div class="figure_item">
-                    <h2>15</h2>
-                    <span>AWARD WINNER</span>
-                </div>
-                <div class="figure_item">
-                    <h2>99</h2>
-                    <span>CUP OF COFFE</span>
-                 </div>
-                 <div class="figure_item">
-                    <h2>24</h2>
-                    <span>MEMBERS</span>
-                 </div>
-               </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section_introduce_services">
-            <div class="container">
-                <h2 class="text_content_sub">
-                    We work with
-                </h2>
-                <h2 class="text_content">
+        <section id="service">
+            <!-- SERVICE -->
+            <div class="container service">
+                <h2 class="heading">
+                    <span class="sub_heading">What work with</span>
                     AMAZING SERVICES
                 </h2>
                 <div class="line"></div>
-
-                <div class="services">
-                    <div class="service_item">
-                        <div class="logo_service">
+                <div class="content">
+                    <div class="content_item">
+                        <div class="logo">
                             <img src="./mogo_image/services_1.png" alt="#">
                         </div>
-                        <div class="service_skill">
-                            <div class="skill">
+                        <div class="skill">
+                            <h4 class="heading_skill">
                                 PHOTOGRAPHY
-                            </div>
-                            <div class="skill_description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </div>
+                            </h4>
+                            <div class="description_skill">
+                                Photography is the science, art and practice of creating durable images by recording light or other electromagnetic radiation                            </div>
                         </div>
                     </div>
-
-                    <div class="service_item">
-                        <div class="logo_service">
+                    <div class="content_item">
+                        <div class="logo">
                             <img src="./mogo_image/services_2.png" alt="#">
                         </div>
-                        <div class="service_skill">
-                            <div class="skill">
+                        <div class="skill">
+                            <h4 class="heading_skill">
                                 WEB DESIGN
-                            </div>
-                            <div class="skill_description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </div>
+                            </h4>
+                            <div class="description_skill">
+                                Web design encompasses many different skills and disciplines in the production and maintenance of websites.                            </div>
                         </div>
                     </div>
-
-                    <div class="service_item">
-                        <div class="logo_service">
+                    <div class="content_item ">
+                        <div class="logo">
                             <img src="./mogo_image/services_3.png" alt="#">
                         </div>
-                        <div class="service_skill">
-                            <div class="skill">
+                        <div class="skill">
+                            <h4 class="heading_skill">
                                 CREATIVITY
-                            </div>
-                            <div class="skill_description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </div>
+                            </h4>
+                            <div class="description_skill">
+                            Creativity is a phenomenon whereby something new and somehow valuable is formed. The created item may be intangible or a physical object.                            </div>
                         </div>
                     </div>
-
-                    <div class="service_item">
-                        <div class="logo_service">
+                    <div class="content_item content_item_bot">
+                        <div class="logo">
                             <img src="./mogo_image/services_4.png" alt="#">
                         </div>
-                        <div class="service_skill">
-                            <div class="skill">
+                        <div class="skill">
+                            <h4 class="heading_skill">
                                 SEO
-                            </div>
-                            <div class="skill_description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </div>
+                            </h4>
+                            <div class="description_skill">
+                                Search engine optimization (SEO) is the process of affecting the visibility of a website or a web page in a web search engine's unpaid results.                            </div>
                         </div>
                     </div>
-
-                    <div class="service_item">
-                        <div class="logo_service">
+                    <div class="content_item content_item_bot">
+                        <div class="logo">
                             <img src="./mogo_image/services_5.png" alt="#">
                         </div>
-                        <div class="service_skill">
-                            <div class="skill">
-                                HTML/CSS
-                            </div>
-                            <div class="skill_description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </div>
+                        <div class="skill">
+                            <h4 class="heading_skill">
+                                CSS/HTML
+                            </h4>
+                            <div class="description_skill">
+                                HyperText Markup Language, commonly abbreviated as HTML, is the standard markup language used to create web pages.                            </div>
                         </div>
                     </div>
-
-                    <div class="service_item">
-                        <div class="logo_service">
-                            <img src="./mogo_image/services_6.png" alt="#">
+                    <div class="content_item content_item_bot">
+                        <div class="logo">
+                            <img src="./mogo_image/services_1.png" alt="#">
                         </div>
-                        <div class="service_skill">
-                            <div class="skill">
+                        <div class="skill">
+                            <h4 class="heading_skill">
                                 DIGITAL
-                            </div>
-                            <div class="skill_description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </h4>
+                            <div class="description_skill">
+                                With digital signals, system noise, provided it is not too great, will not change the quantification whereas with signals handled using analog processing.                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Unique Design -->
+            <div class="unique_design_wrapper">
+                <div class="container unique_design">
+                    <h2 class="heading">
+                        <span class="sub_heading">What we do</span>
+                        STORY ABOUT US
+                    </h2>
+                    <div class="line"></div>
+                    <div class="devices">
+                        <div class="tablet">
+                            <img src="./mogo_image/tablet.png" width="100%", height="100%" alt="#">
+                            <div class="mobile">
+                                <img src="./mogo_image/phone.png" alt="#">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="section_design_on_divices">
-            <div class="container">
-                <h2 class="text_content_sub">
-                    For all devices
-                </h2>
-                <h2 class="text_content">
-                    UNIQUE DESIGN
+            <!-- What we do  -->
+            <div class="container whatwedo">
+                <h2 class="heading">
+                    <span class="sub_heading">What we do</span>
+                    STORY ABOUT US
                 </h2>
                 <div class="line"></div>
-                <div class="devices">
-                    <div class="tablet">
-                        <img src="./mogo_image/tablet.png" width="100%", height="100%" alt="#">
-                        <div class="mobile">
-                            <img src="./mogo_image/phone.png" alt="#">
-                        </div>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatum eos omnis earum quia consequuntur inventore? Et quod,
+                     error id facere maiores asperiores culpa,
+                      ipsam aliquid magni temporibus doloremque adipisci sapiente.</p>
+                <div class="content">
+                    <div class="img item">
+                            <img src="./mogo_image/whatwedo.png" width="100%" alt="#">
                     </div>
-                </div>
-        </div>
-        </div>
-
-        <div class="section_introduce_services_do">
-            <div class="container">
-                <h2 class="text_content_sub">
-                    Service
-                </h2>
-                <h2 class="text_content">
-                    WHAT WE DO
-                </h2>
-                <div class="line"></div>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Qui provident accusantium doloribus totam dolor sunt neque, quibusdam modi sapiente eos blanditiis. 
-                     Ipsum nostrum, doloribus sequi laborum illo obcaecati labore error.
-                </p>
-
-                <div class="Service_content">
-                    <div class="img_whatwedo">
-                        <img src="./mogo_image/whatwedo.png" width="100%" alt="#">
-                    </div>
-                    <div class="Introduce_services">
-
-                        <div class="skill_detail_item">
-                            <div class="Skill_detail">
-                                <div class="img_skill_detail">
-                                    <img src="./mogo_image/whatwedo1.png" alt="#">
-                                </div>
-                                <div class="area_show_skill">
-                                    <p>PHOTOGRAPHY</p>
-                                    <a href=""><i class="fa-solid fa-angle-down"></i>
-                                    </a>
+                    <div class="panel item">
+                        <div class="panel_item" >
+                            
+                                <h5 class="panel_title" data-index ="0">
+                                    PHOTOGRAPHY
+                                    <div class="logo">
+                                        <img src="./mogo_image/whatwedo1.png" alt="">
+                                    </div>
+                                </h5>
+                                <div class="panel_body open">
+                                    <div class="description_skill">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
                                 </div>
                             </div>
-                            <p class="skill_text_decsription">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Sunt, asperiores distinctio pariatur laboriosam consequatur itaque dolor suscipit alias blanditiis similique omnis enim nesciunt atque ipsum,
-                                  voluptatum, exercitationem neque cum soluta.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Sunt, asperiores distinctio pariatur laboriosam consequatur itaque dolor suscipit alias blanditiis similique omnis enim nesciunt atque ipsum,
-                                  voluptatum, exercitationem neque cum soluta.
-                            </p>
-                        </div>
-
-                        <div class="skill_detail_item">
-                            <div class="Skill_detail">
-                                <div class="img_skill_detail">
-                                    <img src="./mogo_image/whatwedo2.png" alt="#">
-                                </div>
-                                <div class="area_show_skill">
-                                    <p>CREATIVITY</p>
-                                    <a href=""><i class="fa-solid fa-angle-down"></i>
-                                    </a>
+                        <div class="panel_item" >
+                            
+                                <h5 class="panel_title" data-index ="1">
+                                    CREATIVITY
+                                    <div class="logo">
+                                        <img src="./mogo_image/whatwedo2.png" alt="">
+                                    </div>
+                                </h5>
+                                <div class="panel_body">
+                                    <div class="description_skill">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
                                 </div>
                             </div>
-                            <p class="skill_text_decsription">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Sunt, asperiores distinctio pariatur laboriosam consequatur itaque dolor suscipit alias blanditiis similique omnis enim nesciunt atque ipsum,
-                                  voluptatum, exercitationem neque cum soluta.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Sunt, asperiores distinctio pariatur laboriosam consequatur itaque dolor suscipit alias blanditiis similique omnis enim nesciunt atque ipsum,
-                                  voluptatum, exercitationem neque cum soluta.
-                            </p>
-                        </div>
-                       
-                        <div class="skill_detail_item">
-                            <div class="Skill_detail">
-                                <div class="img_skill_detail">
-                                    <img src="./mogo_image/whatwedo3.png" alt="#">
-                                </div>
-                                <div class="area_show_skill">
-                                    <p>WEB DESIGN</p>
-                                    <a href=""><i class="fa-solid fa-angle-down"></i>
-                                    </a>
+                        <div class="panel_item" >
+                            
+                                <h5 class="panel_title" data-index ="2">
+                                    WEB DESIGN
+                                    <div class="logo">
+                                        <img src="./mogo_image/whatwedo3.png" alt="">
+                                    </div>
+                                </h5>
+                                <div class="panel_body">
+                                    <div class="description_skill">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
                                 </div>
                             </div>
-                            <p class="skill_text_decsription">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Sunt, asperiores distinctio pariatur laboriosam consequatur itaque dolor suscipit alias blanditiis similique omnis enim nesciunt atque ipsum,
-                                  voluptatum, exercitationem neque cum soluta.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Sunt, asperiores distinctio pariatur laboriosam consequatur itaque dolor suscipit alias blanditiis similique omnis enim nesciunt atque ipsum,
-                                  voluptatum, exercitationem neque cum soluta.
-                            </p>
-                        </div>
 
                     </div>
                 </div>
+
             </div>
-        </div>
+            <!--evaluate-->
+            <div class="container eluavate">
+                <i class="fa-solid fa-angle-left arrow-left"></i>
+                <div class="eluavate_warrper">
+                    <div class="eluavate_slides">
 
-        <div class="section_slide_comment">
-            <div class="container">
-                <div class="slide_comment">
-                    <div class=" arrow_slide">
-                        <i class="fa-solid fa-angle-down arrow_left_slide"></i>
-                    </div>
-                    <div class="img_comment">
-                        <img src="./mogo_image/comment.png" alt="#">
-                    </div>
-                    <div class="comment">
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-                        <div class="user">
-                            <div class="line"></div>
-                            <span class="peole">
-                            Joe Doe
-                             </span>
+                        <div class="eluavate_item">
+                            <div class="symbol"><img src="./mogo_image/comment.png" alt=""></div>
+                            <div style="text-align:left">
+                                <p class="qoute">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                <span class="name">Jon Doe</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class=" arrow_slide">
-                        <i class="fa-solid fa-angle-down arrow_right_slide"></i>
+
+                        <div class="eluavate_item">
+                            <div class="symbol"><img src="./mogo_image/comment.png" alt=""></div>
+                            <div style="text-align:left">
+                                <p class="qoute">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                <span class="name">Jon Doe</span>
+                            </div>
+                        </div>
+
+                        <div class="eluavate_item">
+                            <div class="symbol"><img src="./mogo_image/comment.png" alt=""></div>
+                            <div style="text-align:left">
+                                <p class="qoute">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                <span class="name">Jon Doe</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </div>
+                <i class="fa-solid fa-angle-right arrow-right"></i>
 
-        <div class="section_team">
-            <div class="container">
-                <h2 class="text_content_sub">
-                    What we are
-                </h2>
-                <h2 class="text_content">
+            </div>
+        </section>
+        
+        <section id="work">
+            <!--OUR TEAM-->
+            <div class="container ourteam">
+                <h2 class="heading">
+                    <span class="sub_heading">What we are</span>
                     MEET YOUR TEAM
                 </h2>
                 <div class="line"></div>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Qui provident accusantium doloribus totam dolor sunt neque, quibusdam modi sapiente eos blanditiis. 
-                     Ipsum nostrum, doloribus sequi laborum illo obcaecati labore error.
-                </p>
-                <div class="img">
-                    <div class="img_1 img_item">
-                        <div class="area_img">
-                            <img src="./mogo_image/team01.png" width="100%" alt="#">
-                            <ul class="infor_social_member">
+                    Qui provident accusantium doloribus totam dolor sunt neque, quibusdam modi sapiente eos blanditiis. 
+                    Ipsum nostrum, doloribus sequi laborum illo obcaecati labore error.
+               </p>
+               <div class="content" style="display: flex;">
+                   <div class="item">
+                       <div class="overlay">
+                            <img src="./mogo_image/team01.png" width="100%" alt="">
+                            <ul class="contact_social">
                                 <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                                 <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                                 <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
                                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
+                            
                         </div>
-                        <div class="name_job">
-                            <p class="name">
-                                MATTHIEW DIX
-                            </p>
-                            <p class="job">
-                                Graphic Design
-                            </p>
-                        </div>
+                        <div class="infor">
+                            <h4 class="name">
+                                 MATTHEW DIX
+                            </h4>
+                            <span class="regency">Graphic Design</span>
+                        </div>  
                     </div>
-                    <div class="img_2 img_item">
-                        <img src="./mogo_image/team02.png" width="100%" alt="#">
-                        <div class="name_job">
-                            <p class="name">
-                                CRISTOPHER CAMPBELL
-                            </p>
-                            <p class="job">
-                                Branding/UX design
-                            </p>
-                        </div>
-                    </div>
-                    <div class="img_3 img_item">
-                        <img src="./mogo_image/team03.png" width="100%" alt="#">
-                        <div class="name_job">
-                            <p class="name">
+                    <div class="item">
+                        <div class="overlay">
+                             <img src="./mogo_image/team02.png" width="100%" alt="">
+                             <ul class="contact_social">
+                                 <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                 <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                 <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                             </ul>
+                             
+                         </div>
+                         <div class="infor">
+                             <h4 class="name">
+                                CHRISTOPHER CAMPBELL
+                             </h4>
+                             <span class="regency">Branding/UX design</span>
+                         </div>  
+                     </div>
+                     <div class="item">
+                        <div class="overlay">
+                             <img src="./mogo_image/team03.png" width="100%" alt="">
+                             <ul class="contact_social">
+                                 <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                 <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                 <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                             </ul>
+                             
+                         </div>
+                         <div class="infor">
+                             <h4 class="name">
                                 MICHAEL FERTIG
-                            </p>
-                            <p class="job">
-                                Developer
-                            </p>
+                             </h4>
+                             <span class="regency">Developer</span>
+                         </div>  
+                     </div>
+                    
+                </div>      
+            </div>
+            <!--Brand Name-->
+            <div class="brand_warrper">
+                <div class="container brand">
+                    <img src="./mogo_image/logo.png" alt="">
+                </div>
+            </div>
+            <!--Porfolio-->
+            <div class="porfolio">
+                <h2 class="heading">
+                    <span class="sub_heading">What we do</span>
+                    SOME OF OUT WORK
+                </h2>
+                <div class="line"></div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui provident accusantium doloribus totam dolor sunt neque, quibusdam modi sapiente eos blanditiis. 
+                    Ipsum nostrum, doloribus sequi laborum illo obcaecati labore error.
+               </p>
+                <div class="porfolioItems">
+                    <div class="item">
+                        <div class="item11" id="item11">
+                            <div>
+                                <img src="./mogo_image/work1.png" width="100%" alt="">
+                            <div class="hover_effect_porfolio1 hover_effect_porfolio" id ="hover_effect_porfolio1">
+                                <div class="content">
+                                    <i class="fa-solid fa-crown" style="color: #fff"></i>
+                                    <div class="title">
+                                        CREATIVETY DESIGN
+                                    </div>
+                                    <span class="desc">Lorem ipsum dolor sit</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item11">
+                            <img src="./mogo_image/work2.png"width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item11">
+                            <img src="./mogo_image/work3.png"width="100%" alt="">
+                        </div>
+                        <div class="item11">
+                            <img src="./mogo_image/work4.png"width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./mogo_image/work5.png"  width="100%"alt="">
+                    </div>
+                    <div class="item">
+                        <div class="item11">
+                            <img src="./mogo_image/work6.png"width="100%" alt="">
+                        </div>
+                        <div class="item11">
+                            <img src="./mogo_image/work7.png"width="100%" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!--Eluavate-->
+            <div class="container eluavate1">
+                <i class="fa-solid fa-angle-left arrow-left1"></i>
+                <div class="eluavate_warrper">
+                    <div class="eluavate_slides1">
 
-        <div class="section_logo">
-            <div class="container">
-                <img src="./mogo_image/logo.png" alt="#">
+                        <div class="eluavate_item1">
+                            <div class="symbol"><img src="./mogo_image/testimonial.png" alt=""></div>
+                            <div style="text-align:left">
+                                <p class="qoute">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                <span class="name">Jon Doe</span>
+                            </div>
+                        </div>
+
+                        <div class="eluavate_item1">
+                            <div class="symbol"><img src="./mogo_image/testimonial.png" alt=""></div>
+                            <div style="text-align:left">
+                                <p class="qoute">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                <span class="name">Jon Doe</span>
+                            </div>
+                        </div>
+
+                        <div class="eluavate_item1">
+                            <div class="symbol"><img src="./mogo_image/testimonial.png" alt=""></div>
+                            <div style="text-align:left">
+                                <p class="qoute">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                                <span class="name">Jon Doe</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-right arrow-right1"></i>
+
+            </div>
+            <!--Happy Client-->
+            <div class="happyClient_wrapper">
+                <div class="container happyClient">
+                    <h2 class="heading">
+                        <span class="sub_heading">Happy Clients</span>
+                        WHAT PEOPLE SAY
+                    </h2>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="content_item">
+                            <div class="img">
+                                <img src="./mogo_image/people1.png" alt="">
+                            </div>
+                            <div class="infor">
+                                <h4 class="name">
+                                    MATTHEW DIX
+                                </h4>
+                                <span class="regency">Graphic Design</span>
+                                <div class="line"></div>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente, sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content_item">
+                            <div class="img">
+                                <img src="./mogo_image/people2.png" alt="">
+                            </div>
+                            <div class="infor">
+                                <h4 class="name">
+                                    MATTHEW DIX
+                                </h4>
+                                <span class="regency">Graphic Design</span>
+                                <div class="line"></div>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente, sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content_item">
+                            <div class="img">
+                                <img src="./mogo_image/people3.png" alt="">
+                            </div>
+                            <div class="infor">
+                                <h4 class="name">
+                                    MATTHEW DIX
+                                </h4>
+                                <span class="regency">Graphic Design</span>
+                                <div class="line"></div>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente, sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content_item">
+                            <div class="img">
+                                <img src="./mogo_image/people4.png" alt="">
+                            </div>
+                            <div class="infor">
+                                <h4 class="name">
+                                    MATTHEW DIX
+                                </h4>
+                                <span class="regency">Graphic Design</span>
+                                <div class="line"></div>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo illo cupiditate temporibus sapiente, sint, voluptatibus tempora esse. Consectetur voluptate nihil quo nulla voluptatem dolorem harum nostrum
+                                </p>
+                            </div>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="blog">
+            <!--BLOG-->
+            <div class="container blog">
+                <h2 class="heading">
+                    <span class="sub_heading">Our stories</span>
+                    LATEST BLOG
+                </h2>
+                <div class="line"></div>
+                <div class="content">
+                    <div class="content_item">
+                        <div class="articthumb">
+                            <img src="./mogo_image/blog1.png " alt="" width="100%">
+                            <div class="date">
+                                <div class="day">
+                                    15
+                                </div>
+                                <div class="month">
+                                    Jan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            LOREM IPSUM DOLOR SIT AMET
+                        </div>
+                        <p class="desc">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="meta">
+                            <i class="fa-solid fa-eye" style="color:rgb(150, 201, 73)"></i>
+                            <span style="color:rgb(150, 201, 73)">543</span>
+                            <i class="fa-solid fa-message" style="color:rgb(150, 201, 73)"></i>
+                            <span style="color:rgb(150, 201, 73)">1200</span>
+                            
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <div class="articthumb">
+                            <img src="./mogo_image/blog2.png" width="100% alt="">
+                            <div class="date">
+                                <div class="day">
+                                    14
+                                </div>
+                                <div class="month">
+                                    Jan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            LOREM IPSUM DOLOR SIT AMET
+                        </div>
+                        <p class="desc">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="meta">
+                            <i class="fa-solid fa-eye" style="color:rgb(150, 201, 73)"></i>
+                            <span style="color:rgb(150, 201, 73)">543</span>
+                            <i class="fa-solid fa-message" style="color:rgb(150, 201, 73)"></i>
+                            <span style="color:rgb(150, 201, 73)">1200</span>
+                            
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <div class="articthumb">
+                            <img src="./mogo_image/blog3.png" width="100% alt="">
+                            <div class="date">
+                                <div class="day">
+                                    12
+                                </div>
+                                <div class="month">
+                                    Jan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            LOREM IPSUM DOLOR SIT AMET
+                        </div>
+                        <p class="desc">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="meta">
+                            <i class="fa-solid fa-eye" style="color:rgb(150, 201, 73)"></i>
+                            <span style="color:rgb(150, 201, 73)">543</span>
+                            <i class="fa-solid fa-message" style="color:rgb(150, 201, 73)"></i>
+                            <span style="color:rgb(150, 201, 73)">1200</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MAP-->
+            <div class="map_wrapper">
+                <div class="container map">
+                    <div class="map_heading">
+                        <div class="logo_location">
+                            <i class="fa-solid fa-location-pin"></i>
+                        </div>
+                        <div id="button_map" class="button">
+                            OPEN MAP
+                        </div>
+                        <div class="line">
+                        </div>
+                    </div>
+                    <div class="content_map">
+                        <iframe src="//www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d79466.26604960626!2d-0.19779784176715043!3d51.50733004537892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!3m2!1d51.5073509!2d-0.1277583!5e0!3m2!1sen!2s!4v1469206441744" frameborder="0" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="wrapper_footer container">
+            <div class="content_footer">
+                <div class="colInfo">
+                    <h4 class="footerlogo">
+                        MoGo
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vel saepe at neque ipsam facilis sint quibusdam perferendis, reiciendis debitis temporibus quas omnis exercitationem dolores asperiores sequi, incidunt, aperiam provident.</p>
+                    <div class="folowUs">
+                        <div class="total_follow">
+                            <span>15K </span>followers
+                        </div>
+                        <div class="socialNetwork">
+                            <span class="text">Follow Us:</span>
+                            <ul class="list_social">
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-pinterest-p"></i></li>
+                                <li><i class="fa-brands fa-google-plus-g"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                            </ul>
+                        </div>
+                        <form action="post" class="subcribeform">
+                            <div class="input_group">
+                                <input type="email" class ="input_mail" placeholder="Email" required>
+                                <button class="button_submit" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="colInfo">
+                    <h4 class="heading">
+                        BLOGS
+                    </h4>
+                   <div class="colInfor_item">
+                        <div class="verticalCenter">
+                            <div class="img">
+                                <img src="./mogo_image/blog_sm1.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">
+                                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+                                </h4>
+                                <span class="date">Jan 9, 2016</span>
+                            </div>
+                        </div>
+                        <div class="verticalCenter">
+                            <div class="img">
+                                <img src="./mogo_image/blog_sm2.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">
+                                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+                                </h4>
+                                <span class="date">Jan 9, 2016</span>
+                            </div>
+                        </div>
+                        <div class="verticalCenter">
+                            <div class="img">
+                                <img src="./mogo_image/blog_sm3.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="title">
+                                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING
+                                </h4>
+                                <span class="date">Jan 9, 2016</span>
+                            </div>
+                        </div>
+                    
+                   </div>
+                </div>
+                <div class="colInfo">
+                    <h4 class="heading">
+                        INSTAGGRAM
+                    </h4>
+                   <div class="colInfor_item">
+                        <div class="wrapper_instagram">
+                            <img src="./mogo_image/instagram1.png" alt="">
+                            <img src="./mogo_image/instagram2.png" alt="">
+                            <img src="./mogo_image/instagram3.png" alt="">
+                            <img src="./mogo_image/instagram4.png" alt="">
+                            <img src="./mogo_image/instagram1.png" alt="">
+                            <img src="./mogo_image/instagram2.png" alt="">
+                            <img src="./mogo_image/instagram3.png" alt="">
+                            <img src="./mogo_image/instagram4.png" alt="">
+                            <img src="./mogo_image/instagram1.png" alt="">
+                            <img src="./mogo_image/instagram2.png" alt="">
+                            <img src="./mogo_image/instagram3.png" alt="">
+                            <img src="./mogo_image/instagram4.png" alt="">
+                        </div>
+                   </div>
+                </div>
             </div>
         </div>
-
-    </main>
-
+        <div class="copyright">
+            <p>Copyright © All Rights Reserved.</p>
+            <p>template by <span>Ninodezign</span> & <span>Alexandr Karsakov</span></p>
+        </div>
+    </footer>
+    <script src="./JS/index.js"></script>
 </body>
 </html>
