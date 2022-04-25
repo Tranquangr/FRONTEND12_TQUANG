@@ -5,12 +5,14 @@ var list_search=[];
 const body = document.getElementById('result')
 
 //mới khởi động kiểm tra dữ liệu từ local storage có dữ liệu gì ko để in ra
-list = JSON.parse(localStorage.getItem('list'));
-renderView(list);
-
-
-
-
+if (localStorage.getItem("list") === null) {
+    localStorage.setItem('list',[]);
+  }
+else
+{
+    list = JSON.parse(localStorage.getItem('list'));
+    renderView(list);
+}
 
 //Sự kiện button add phần tử vào mảng và cho hiện ra list trên màn hình
 
