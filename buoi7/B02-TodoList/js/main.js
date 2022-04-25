@@ -16,6 +16,25 @@ renderView(list);
 
 var btn_add = document.getElementById("btn_add");
 btn_add.addEventListener("click", function(){
+    addList();
+})
+
+
+//Sự kiện nhập dữ liệu bằng enter
+var inputData =document.getElementById("input-data");
+inputData.addEventListener("keydown",function(event){
+    if (event.key === "Enter") {
+        event.preventDefault();
+        addList();
+    }
+})
+
+
+
+
+//Viết 1 function addList
+function addList()
+{
     const task_name = document.getElementById('input-data').value;
     const level_name = document.querySelector('.level').value;
     var obj={
@@ -32,8 +51,7 @@ btn_add.addEventListener("click", function(){
     }
     renderView(list);
     save_json(list)
-})
-
+}
 
 //View lại các phần tử hiện tại có trong mảng
 function renderView(list)
