@@ -25,7 +25,7 @@ body{
 .container .area_input_data  {
     display:flex;
     justify-content:space-between;
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 .container .area_input_data .search{
@@ -50,9 +50,25 @@ body{
 .container .area_input_data .CRUD_data{
     width: 60%;
 }
+
+.container .area_input_data .CRUD_data #btn_handle{
+    padding: 1rem 1.5rem ;
+    background-color: #39c0ed;
+    color: white;
+    border-color: #39c0ed;
+    font-weight:400;
+    border-radius: .3rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.container .area_input_data .CRUD_data .data{
+    display: none;
+}
+
 .container .area_input_data .CRUD_data #input-data {
     padding: 1rem 1.5rem ;
-    width: 40%;
+    width: 70%;
 }
 
 .container .area_input_data .CRUD_data .level {

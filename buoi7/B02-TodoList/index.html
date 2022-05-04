@@ -17,20 +17,24 @@
 		<h1 class="header">Project - Todo List</h1>
 
 		<div class="area_input_data">
-
 			<div class="search">
 				<input type="text" id="input-search" placeholder="Enter keyword ..." oninput="search_data()">
 				<button type="button" id="btn-search" onclick="search_data()" >Tìm kiếm</button>
 			</div>
 
 			<div class="CRUD_data">
-				<input type="text" id="input-data" placeholder="Task name">
-				<select class="level">
-					<option value="Medium">Medium</option>
-					<option value="Small">Small</option>
-					<option value="High">High</option>
-				</select>
-				<button type="button" id="btn_add">ADD</button>
+				<div class="btn_handle">
+					<button type="button" id="btn_handle" onclick="showHideDialog()">ADD</button>
+				</div>
+				<div class="data">
+					<input type="text" id="input-data" placeholder="Task name">
+					<select class="level">
+						<option value="Medium">Medium</option>
+						<option value="Small">Small</option>
+						<option value="High">High</option>
+					</select>
+					<button type="button" id="btn_add">SUBMIT</button>
+				</div>
 			</div>
 		</div>
 		<div class="list_todo">
@@ -53,7 +57,8 @@
 		</div>
 
 	</div>
-
+	<script src="./js/define.js"></script>
+	<script src="./js/function.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>
