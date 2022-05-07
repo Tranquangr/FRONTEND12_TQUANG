@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;  
+}
+col{
+    padding: 0;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 5rem !important;
+}
+
+.pe-6,
+.px-6 {
+  padding-right: 5rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 5rem !important;
+}
+
+.ps-6,
+.px-6 {
+  padding-left: 5rem !important;
+}
+
+.mt-6,
+.my-6 {
+  margin-top: 5rem !important;
+}
+
+.me-6,
+.mx-6 {
+  margin-right: 5rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 5rem !important;
+}
+
+.ms-6,
+.mx-6 {
+  margin-left: 5rem !important;
+}
+
+.areaPlayGame{
+    border: 1px solid black;
+}
+
+.box {
+    width: 8rem;
+    height: 3rem;
+    border: 1px solid black;
+}
+
+.areaPlayGame .logoGame {
+  width: 80%;
+}
+
+.areaPlayGame .areaHandle .box {
+  cursor: pointer;
+}
+
+.funcHelp{
+  list-style: none;
+  padding: 0;
+}
+.funcHelp i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+h3{
+  font-size:15px !important;
+  font-weight: bolder !important;
+  padding: 5px 5px;
+  background-color: green;
+  color: #fff !important;
+  display: inline-block;
+}
+
+p{
+  font-size:12px;
+}
+
+.follow{
+  list-style: none;
+  padding: 0;
+}
+.follow li i {
+  font-size: 30px;
+}
+
+
+
+
