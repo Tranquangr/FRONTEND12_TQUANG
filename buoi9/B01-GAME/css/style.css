@@ -61,10 +61,13 @@ col{
 
 .box {
     width: 8rem;
-    height: 3rem;
+    padding: 0.3rem 0;
     border: 1px solid black;
 }
 
+.numberSelected{
+  display: none;
+}
 .areaPlayGame .logoGame {
   width: 80%;
 }
@@ -104,6 +107,102 @@ p{
   font-size: 30px;
 }
 
+.bulma{
+  animation-name: movebulma;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.5);
+  animation-fill-mode: forwards;
+}
+.xifu{
+  animation-name: movexifu;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.5);
+  animation-fill-mode: forwards;
+}
+.modal_rank{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(102, 98, 98, 0.712);
+  display:none;
+}
 
 
+#funcHelp{
+  display: none;
+}
 
+.sharingan > i{
+  display: inline-block;
+  animation-name: moveSharingan;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+
+.rank{
+  position: relative;
+  animation-name: moveRank;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.close{
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+
+@keyframes movebulma {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to { transform: translateX(-30%);
+    opacity: 1;
+  }
+}
+@keyframes movexifu{
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to { transform: translateX(30%);
+    opacity: 1;
+  }
+}
+
+@keyframes moveSharingan{
+  0%{
+    transform: rotate(72deg);
+  }
+  25%{
+    transform: rotate(144deg);
+  }
+  50%{
+    transform: rotate(216deg);
+  }
+  75%{
+    transform: rotate(288deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+@keyframes moveRank{
+  from{
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  to{ transform :TranslateY(-100%);
+  opacity: 1;}
+}

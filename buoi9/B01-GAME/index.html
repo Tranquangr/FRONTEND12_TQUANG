@@ -9,6 +9,7 @@
 	<link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link data-require="bootstrap@*" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
 	 <!-- jQuery First -->
 	 <script data-require="jquery@2.1.3" data-semver="2.1.3" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -22,7 +23,7 @@
 			<div class="col-2 ">
 				<div class="selectLevel mt-5">
 					<label for="cars" class="mb-2 fs-3">Choose LEVEL: </label>
-					<select class="form-select form-select-lg mb-6 w-75" aria-label=".form-select-lg example" onchange="numberCells(this)">
+					<select class="form-select form-select-lg mb-6 w-75 select_level" aria-label=".form-select-lg example" onchange="numberCells(this)">
 						<option value="" disabled selected>Select level</option>
 						<option value="1">Dễ</option>
 						<option value="2">Trung Bình</option>
@@ -30,15 +31,15 @@
 					  </select>
 				</div>
 				<div class="settingGame d-flex flex-column">
-					<button type="button" class="btn btn-info w-75 mb-3 " data-toggle="tooltip" data-placement="right" title="Trò chơi rất là đơn giản tự trải nghiệm đi bạn hiền, click bậy vài cái và có các trợ giúp sát bên đó, có thế mà cũng cố click vào đây nữa" >LUẬT CHƠI</button>
-					<button type="button" class="btn btn-danger w-75 mb-3">XẾP HẠNG</button>
-					<button type="button" class="btn btn-primary w-75 mb-3">LƯU GAME</button>		
+					<button type="button" class="btn btn-info w-75 mb-3 " data-toggle="tooltip" data-placement="right" title="Trò chơi rất là đơn giản tự trải nghiệm đi bạn hiền, click bậy vài cái và có các trợ giúp sát bên đó, có thế mà cũng cố click vào đây nữa" ><i class="fa-solid fa-hand-holding-dollar"></i> LUẬT CHƠI</button>
+					<button type="button" class="btn btn-danger w-75 mb-3" onclick="showRanK()"><i class="fa-solid fa-list-ol"></i> XẾP HẠNG</button>
+					<button type="button" class="btn btn-primary w-75 mb-3"><i class="fa-solid fa-floppy-disk"></i> LƯU GAME</button>		
 				</div>
 			</div>
 			<div class="col-6">
 				<div class="areaPlayGame mt-5 p-3">
 					<!--KHU VỰC SỐ ĐÃ CHỌN-->
-					<div class="numberSelected d-flex justify-content-center text-center">
+					<div class="numberSelected justify-content-center text-center">
 						<div class="box me-2">
 							
 						</div>
@@ -50,21 +51,26 @@
 						</div>
 					</div>
 					<!--LOGO GAME-->
-					<div class="logoGame text-center mx-auto my-5">
-						<img src="./img/rsz_—pngtree—colorful_video_game_console_joystick_3570051.png" alt="#" width="50%">;
+					<div class="logoGame d-flex align-items-end mx-auto text-center"> 
+						<div class="xifu">
+							<img src="./img/quilaosuphu.png" alt="" width="50%">
+						</div>
+						<div class="bulma">
+							<img src="./img/bulma.png" alt="" width="40%">
+						</div>
 					</div>
 					<!--KHU VỰC NGƯỜI CHƠI THAO TÁC ĐỂ CHƠI-->
-					<div class="areaHandle d-flex justify-content-center text-center flex-wrap">
+					
+					<div class="areaHandle d-flex justify-content-center text-center flex-wrap ">
 						
 					</div>
 				</div>
 			</div>
-			<div class="col-1">
+			<div class="col-1 animate__animated animate__lightSpeedInRight" id="funcHelp">
 				<ul class ="funcHelp">
-					<li><i class="fa-solid fa-hurricane"></i></li>
-					<li><i class="fa-solid fa-arrow-rotate-right"></i></li>
-					<li><i class="fa-solid fa-phone-flip"></i></li>
-					<li><i class="fa-solid fa-magnifying-glass-plus"></i></li>
+					<li class="sharingan mb-2"><i class="fa-solid fa-hurricane"data-toggle="tooltip" data-placement="top" title="SHARINGAN 'thẤu thỊ vŨ Trụ',TUI CHO PHÉP BẠN SỬ DỤNG NHIỀU LẦN ĐÓ" onclick="help1()"></i></li>
+					<li class = "mb-2"><i class="fa-solid fa-phone-flip"data-toggle="tooltip" data-placement="bottom" title="Ó GỌI CHO GOOGLE cƠ à !" onclick="help2()"></i></li>
+					<li class = "mb-2"><i class="fa-solid fa-magnifying-glass-plus" onclick="help3()"></i></li>
 				</ul>
 			</div>
 			<div class="col-3">
@@ -73,11 +79,33 @@
 					  GỢI Ý
 					</div>
 					<div class="card-body">
-					  
+						<div class="spinner-grow text-primary" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
+						  <div class="spinner-grow text-secondary" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
+						  <div class="spinner-grow text-success" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
+						  <div class="spinner-grow text-danger" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
+						  <div class="spinner-grow text-warning" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
+						  <div class="spinner-grow text-info" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
+						  <div class="spinner-grow text-light" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
+						  <div class="spinner-grow text-dark" role="status">
+							<span class="visually-hidden">Loading...</span>
+						  </div>
 					</div>
 				  </div>
 			</div>
-
 		</div>
 		
 		<div class="footer d-flex justify-content-between">
@@ -90,16 +118,31 @@
 				</ul>
 			</div>
 			<audio controls autoplay loop>
-				<source src="./music/sandro_cavazza_lean_on_me_audio_5060429610750061055.mp3">
+				<source src="./music/TinhCaTinhTa-KIS-7040221.mp3">
 			</audio>
+		</div>
+
+		
+	</div>
+	<div class="modal_rank align-items-center justify-content-center">
+		<div class="col-6 rank">
+			<table class="table table-dark ">
+				<thead>
+				  <tr>
+					<th scope="col">Tên</th>
+					<th scope="col">Điểm</th>
+				  </tr>
+				</thead>
+				<tbody class ="body">
+				  
+				</tbody>
+			</table>
+			<div class="close text-end me-3 mt-1">
+				<i class="fa-solid fa-xmark text-light" onclick="hideRank()" ></i>
+			</div>
 		</div>
 	</div>
 	
-	<script>
-
-		
-	  
-	  </script>
 </body>
 	<script src="./js/define.js"></script>
 	<script src="./js/function.js"></script>
