@@ -73,22 +73,24 @@ function numberCells(obj)
                     $("p").last().text(text);
                     let result = createResult();
                     result.innerHTML = "Số bí mật là:" + randomNumber;
-                    nameRank = prompt("Bạn muốn lưu danh sử sách thì điền tiên nhé !!!");
+                    setTimeout(function () {
+                        nameRank = prompt("Bạn muốn lưu danh sử sách thì điền tiên nhé !!!");
                     
-                    if (value == 1)
-                    {
-                            scoreRank = 100 - num*10;
-                    }else if (value == 2)
-                    {
-                            scoreRank = 200 - num*10;
-                    }else{
-                            scoreRank = 300- num*10;
-                    }
-                    
-                    var obj = {
-                        name : nameRank,
-                        score : scoreRank,
-                    }
+                        if (value == 1)
+                        {
+                                scoreRank = 100 - num*10;
+                        }else if (value == 2)
+                        {
+                                scoreRank = 200 - num*10;
+                        }else{
+                                scoreRank = 300- num*10;
+                        }
+                        
+                        var obj = {
+                            name : nameRank,
+                            score : scoreRank,
+                        }
+                    },50)
                     boxRecommend.appendChild(result);
                     list.push(obj);
                     render(list);
@@ -132,20 +134,22 @@ function numberCells(obj)
                     let result = createResult();
                     result.innerHTML = "Số bí mật là:" + randomNumber;
                     boxRecommend.appendChild(result);
-                    nameRank = prompt("Bạn muốn lưu danh sử sách thì điền tiên nhé !!!");
-                    if (value == 1)
-                    {
-                            scoreRank = 100 - num*10;
-                    }else if (value == 2)
-                    {
-                            scoreRank = 200 - num*10;
-                    }else{
-                            scoreRank = 300- num*10;
-                    }
-                    var obj = {
-                        name : nameRank,
-                        score : scoreRank,
-                    }
+                    setTimeout(function(){
+                        nameRank = prompt("Bạn muốn lưu danh sử sách thì điền tiên nhé !!!");
+                        if (value == 1)
+                        {
+                                scoreRank = 100 - num*10;
+                        }else if (value == 2)
+                        {
+                                scoreRank = 200 - num*10;
+                        }else{
+                                scoreRank = 300- num*10;
+                        }
+                        var obj = {
+                            name : nameRank,
+                            score : scoreRank,
+                        }
+                    },50)
                     list.push(obj);
                     render(list);
                     save_json(list);
